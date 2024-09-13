@@ -7,5 +7,9 @@
         {%else%}
         <h1>Hello World</h1>
         {% endif %}
+
+        {%for product in products%}
+            <ul>{{product.title}}</ul>
+        {%endfor%}
     </body>
 </html>
